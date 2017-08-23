@@ -31,4 +31,27 @@
 - Popup will tell you how many records were found (Defaults to all records.)
 - Click on <b>Submit</b>
 - Records will be loaded into Excel (progress should show in lower lefthand corner)
-- "Teradata Download Finished" will apppear when completed.
+- "<b>Teradata Download Finished</b>" will apppear when completed.
+
+<h2>Update Meter Status from SSN</h2>
+
+- Click <b>SSNMeterStatus</b>  
+  The <b>RunDate</b> (leftmost colum) is used to determine the corresponding SSN file
+- "<b>SSN Meter Status Finished.</b>" will appear when done.  
+  The column header "src_admin_state" will be highlighted in blue.
+  
+<h2>Collect Diswconnected Meters</h2>
+
+- Click on <b>Disconnected</b>
+- The number of Disconnected meters will be shown.
+- Click <b>OK</b>
+
+  A new <b>Disconnected</b> tab will appear
+
+<h2>Create the Proximity Tab</h2>
+
+- Click on <b>PromximityColumns</b>
+-
+  
+  
+<h2>

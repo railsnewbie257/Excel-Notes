@@ -40,7 +40,7 @@
 - "<b>SSN Meter Status Finished.</b>" will appear when done.  
   The column header "src_admin_state" will be highlighted in blue.
   
-<h2>Collect Diswconnected Meters</h2>
+<h2>Collect Disconnected Meters</h2>
 
 - Click on <b>Disconnected</b>
 - The number of Disconnected meters will be shown.
@@ -50,8 +50,14 @@
 
 <h2>Create the Proximity Tab</h2>
 
-- Click on <b>PromximityColumns</b>
--
+- Click on <b>PromximityColumns</b>  
+  A new <b>Proximity</b> tabe will appear.
+  
+<h2>Process Meters</h2>
+
+- Click on "<b>LG_NEXT</b>" and "<b>LG_BACK" to step through the meters
+- Click on "<b>LG_KEEP</b>" to save a meter to the <b>Keep</b> and <b>Ticket</b> tabs
+
   
   
 <h2>

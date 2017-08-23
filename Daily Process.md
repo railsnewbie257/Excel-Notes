@@ -1,6 +1,6 @@
 <h2>Update Database</h2>
 
-- Click on <b>DBLastGaspUpdate</b>
+- Click on <b>DBLastGaspUpdate</b> (Smiley Face)
 - <b>Yesterday's Date</b> is prefilled (Last Gasp is always 1 day late)
 - Click <b>Done</b>
 - It will either update the database or tell you it has already been updated.

@@ -3,7 +3,8 @@
 - Click on <b>DBLastGaspUpdate</b> (Smiley Face)
 - <b>Yesterday's Date</b> will be prefilled (Last Gasp is always 1 day late)
 - Click <b>Done</b>
-- It will either update the database or tell you it has already been updated.
+
+  <em>It will either update the database or tell you it has already been updated.</em>
 
 <h2>Process SilverSprings Data</h2>
 

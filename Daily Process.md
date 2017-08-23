@@ -9,12 +9,12 @@
 
 - Download Silver Springs data into Excel
 - Click on <b>SSNSplitFile</b> (This will save the files by time segment.)
-- Repeat until all .csv have been processed.  
+- Repeat until all .csv files have been processed.  
 
-  <em>At this point you may have several files SSN-YYYY-MM-DD-HHMMSS-HHMMSS.xlsx  
-  YYYY-MM-DD is the date of the SSN data  
-  the first HHMMSS is the beginning time of the SSN data  
-  the second HHMMSS is the ending time of the SSN data</em>
+    <em>At this point you may have several files SSN-YYYY-MM-DD-HHMMSS-HHMMSS.xlsx  
+    YYYY-MM-DD is the date of the SSN data  
+    the first HHMMSS is the beginning time of the SSN data  
+    the second HHMMSS is the ending time of the SSN data</em>
 
 - The next step is to <b>merge</b> the time segment files
 

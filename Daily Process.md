@@ -29,9 +29,8 @@
 
 <h2>Download Last Gasp Report</h2>
 
-- Click on <b>Query</b>
-- Select <b>Last Gasp Daily</b>
-- Click on <b>Submit</b>
+- Click on <b>LastGaspDaily</b>
+- Enter date (yesterday's date is prefilled)
 - Popup will tell you how many records were found (Defaults to all records.)
 - Click on <b>Submit</b>
 - Records will be loaded into Excel (progress should show in lower lefthand corner)

@@ -6,3 +6,6 @@
 <b>Right</b>(<em>string, count</em>)
 <b>Left</b>(<em>string, count</em>)
 <b>Mid</b>(<em>string, start, count</em>) 
+
+<b>Split</b>
+<pre>

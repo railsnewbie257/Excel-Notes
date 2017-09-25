@@ -1,6 +1,8 @@
 [Original Post (here)](https://msdn.microsoft.com/en-us/library/office/gg469862(v=office.14).aspx)   
 [Followup SO (here)](https://stackoverflow.com/questions/25127530/right-click-to-copy-not-functioning-properly)
 
+[Userform Contextual Menu class code](http://www.andypope.info/vba/uf_contextualmenu.htm)
+
 <h2>Add as a Private Module</h2>
 <pre>
 Sub AddToCellMenu()

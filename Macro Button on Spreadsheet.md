@@ -1,6 +1,6 @@
 - Create your <b>macro</b>
 - Click <b>Developer</b> on <b>Menu Top</b>
-- Click <b>Insert</b>
+- Click <b>Insert</b> (in Controls, not the one on top)
 - Click on <b>Button</b> on <b>Form Control</b>
 
 - Draw button on spreadsheet

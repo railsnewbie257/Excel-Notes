@@ -21,8 +21,17 @@ Sub MakePopUp()
     On Error GoTo 0
      
     With CommandBars.Add(Name:="MyPopUp", Position:=msoBarPopup)
-        .Controls.Add Type:=msoControlButton, ID:=19
-        .Controls.Add Type:=msoControlButton, ID:=22
+        .Controls.Add(Type:=msoControlButton, ID:=19).OnAction = "Textbox_Copy"
+        .Controls.Add(Type:=msoControlButton, ID:=22).OnAction = "Textbox_Paste"
     End With
 End Sub
+
+Sub Textbox_copy()
+    UserForm1.TextBox1.Copy
+End Sub
+
+Sub Textbox_paste()
+    UserForm1.TextBox1.Paste
+End Sub
+
 </pre>

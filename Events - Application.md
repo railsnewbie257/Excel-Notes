@@ -1,5 +1,7 @@
 http://www.cpearson.com/excel/AppEvent.aspx
 
+[Excel VBA Events: Tutorial And List With 115 Application, Workbook, Worksheet And Chart Events](https://powerspreadsheets.com/excel-vba-events/)
+
 <h2>Add Class Module</h2>
 <pre>
 Dim WithEvents App As Application

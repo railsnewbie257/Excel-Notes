@@ -1,3 +1,5 @@
+https://stackoverflow.com/questions/3511903/execute-code-when-form-is-closed-in-vba-excel-2007
+
 <pre>
 Private Sub UserForm_QueryClose(Cancel As Integer, CloseMode As Integer)
     If CloseMode = 0 Then

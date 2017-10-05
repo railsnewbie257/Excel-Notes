@@ -1,6 +1,6 @@
 <h2>Application.Cursor Properties</h2>
 
-The cursor type will not automatically restore itself, so must be set
+Once set, the cursor type will not automatically restore itself, so must be set
 
 <pre>
 Application.Cursor = <b>xlDefault</b>

@@ -18,7 +18,7 @@ Private Sub UserForm_QueryClose(Cancel As Integer, CloseMode As Integer)
 End Sub
 </pre>
 
-<h2>Terminate Is Execute Whenever The Form Is Closed</h2>
+<h2>Terminate Is Executed Whenever The Form Is Closed</h2>
 
 <pre>
 ' any closing of Userform will come here

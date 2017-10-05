@@ -1,11 +1,11 @@
 https://stackoverflow.com/questions/3511903/execute-code-when-form-is-closed-in-vba-excel-2007
 
+<h2>To Prevent Userform to Close Using (X) In Top Right Corner</h2>
 <pre>
 Private Sub UserForm_QueryClose(Cancel As Integer, CloseMode As Integer)
     If CloseMode = 0 Then
-        ' Your codes
-        ' Tip: If you want to prevent closing UserForm by Close (×) button in the right-top corner of the UserForm, just uncomment the following line:
-        ' Cancel = True
+        ...
+        <b>Cancel = True</b>
     End If
 End Sub
 </pre>
@@ -13,7 +13,18 @@ End Sub
 <pre>
 Private Sub UserForm_QueryClose(Cancel As Integer, CloseMode As Integer)
     If CloseMode = vbFormControlMenu Then
-        'Your code goes here
+        ...
     End If
 End Sub
 </pre>
+
+<h2>Terminate Is Execute Whenever The Form Is Closed</h2>
+
+<pre>
+' any closing of Userform will come here
+Private Sub UserForm_Terminate()
+    ...
+    Unload Me
+End Sub
+</pre>
+

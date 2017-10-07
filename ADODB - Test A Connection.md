@@ -1,4 +1,12 @@
 
+<h2>In caller Module</h2>
+
+<pre>
+Sub Main()
+    Call ConnectDB
+End Sub
+</pre>
+
 <h2>In Global Module</h2>
 
 <pre>
@@ -10,12 +18,13 @@ Public DBConnect As ADODB.Connection
 
 <h2>Make LoginForm Userform</h2>
 
+Create a Userform with 2 TextBoxes and 2 CommandButtons
+
 - TextBox: <b>tstUserName</b>
 - TextBox: <b>txtPassword</b>
 - CommandButton: <b>btnSubmit</b>
 - CommandButton: <b>btnCancel</b>
 
-Userform Code
 <pre>
 
 Private Sub btnSubmit_Click()

@@ -8,7 +8,7 @@ Dim i As Long
 
 10    Debug.Print "A"
 20    Debug.Print "B"
-30    i = "Sid"
+30    i = "Sid"  ' error on this line
 40    Debug.Print "A"
 
 50    Exit Sub
@@ -18,6 +18,8 @@ Dim i As Long
     Stop
     Resume Next</b>
 </pre>
+
+reports error on line (<b>30</b>)
 
 <h2>Also possible is</h2>
 

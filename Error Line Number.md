@@ -8,7 +8,7 @@ Dim i As Long
 
 10    Debug.Print "A"
 20    Debug.Print "B"
-30    i = "Sid"  ' error on this line
+30    i = "Sid"  ' <em>error on this line</em>
 40    Debug.Print "A"
 
 50    Exit Sub
@@ -31,7 +31,7 @@ Dim i As Long
 
 10    Debug.Print "A"
       Debug.Print "B"
-      i = "Sid"
+      i = "Sid"  ' <em>error on this line</em>
       Debug.Print "A"
 
 50    Exit Sub

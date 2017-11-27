@@ -1,0 +1,21 @@
+<h2>Use <b>Erl</b> to report line error</h2>
+
+<pre>
+Sub sample()
+Dim i As Long
+
+<b>On Error GoTo gotError</b>
+
+10    Debug.Print "A"
+20    Debug.Print "B"
+30    i = "Sid"
+40    Debug.Print "A"
+
+50    Exit Sub
+
+<b>gotError:
+    MsgBox Err.Number & " " & Err.Description & vbNewLine & vbNewLine & "Error on line: " & Erl
+    Stop
+    Resume Next</b>
+    
+</pre>

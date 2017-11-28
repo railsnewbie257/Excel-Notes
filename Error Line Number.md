@@ -14,7 +14,7 @@ Dim i As Long
 50    Exit Sub
 
 <b>gotError:
-    MsgBox Err.Number & " " & Err.Description & vbNewLine & vbNewLine & "Error on line: " & Erl
+    MsgBox Err.Number & " " & Err.Description & vbNewLine & vbNewLine & "Error on line: " & Erl, title:=" "
     Stop
     Resume Next</b>
 </pre>

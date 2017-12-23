@@ -2,9 +2,11 @@
 Sub ReadDatabase()
 Dim DBCn As ADODB.Connection
 Dim DBRs As ADODB.Recordset
+Dim useQuery as String
+Dim i as Integer, j as Integer
 
 On Error GoTo gotError
-10    qq = "SELECT TOP 1 * from " & tableName
+10    useQuery = "SELECT TOP 1 * from " & tableName
 
 20    Set DBCn = DBCheckConnection(DBCn)
 30    Set DBRs = DBCheckRecordset(DBRs)
@@ -16,8 +18,22 @@ On Error GoTo gotError
 80        Set .ActiveConnection = DBCn
 90    End With
 
-100   DBRs.Open qq, DBCn
+100   DBRs.Open useQuery, DBCn
 
+'----------------------------------------------------------------------------------------
+110   recordCount = DBRs.recordCount
+120   For row = 1 To recordCount         ' down the sheet
+        
+130      fieldCount = DBRs.Fields.count
+140      For j = 0 To fieldCount - 1     ' across the row
+150          Cells(row, j+1) = DBRs.Fields(j).Value
+160      Next j
+170      DBRs.MoveNext                   ' next row of data
+        
+180  Next i
+190  DBRs.Close
+200  Exit Sub
+    
 gotError:
     MsgBox Err.Number & " " & Err.Description & vbNewLine & vbNewLine & "Error on line: " & Erl, Title:=" "
     Stop

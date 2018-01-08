@@ -21,7 +21,7 @@ Dim i as Integer, j as Integer
 100   <b>DBRs.Open useQuery, DBCn</b>
 
 '----------------------------------------------------------------------------------------
-110   recordCount = DBRs.recordCount
+110   <b>recordCount = DBRs.recordCount</b> ' see if something returned
 120   For row = 1 To recordCount         ' down the sheet
         
 130      fieldCount = DBRs.Fields.count

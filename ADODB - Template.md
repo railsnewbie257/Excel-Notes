@@ -28,10 +28,10 @@ Dim i as Integer, j as Integer
 140      For j = 0 To fieldCount - 1     ' across the row
 150          Cells(row, j+1) = DBRs.Fields(j).Value
 160      Next j
-170      DBRs.MoveNext                   ' next row of data
+170      <b>DBRs.MoveNext</b>                   ' next row of data
         
 180  Next i
-190  DBRs.Close
+190  <b>DBRs.Close</b>
 200  Exit Sub
     
 <b>gotError:

@@ -5,7 +5,7 @@ Dim DBRs As ADODB.Recordset
 Dim useQuery as String
 Dim i as Integer, j as Integer
 
-On Error GoTo gotError
+<b>On Error GoTo gotError</b>
 10    useQuery = "SELECT TOP 1 * from " & tableName
 
 20    Set DBCn = DBCheckConnection(DBCn)
@@ -18,7 +18,7 @@ On Error GoTo gotError
 80        Set .ActiveConnection = DBCn
 90    End With
 
-100   DBRs.Open useQuery, DBCn
+100   <b>DBRs.Open useQuery, DBCn</b>
 
 '----------------------------------------------------------------------------------------
 110   recordCount = DBRs.recordCount

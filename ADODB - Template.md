@@ -34,8 +34,8 @@ Dim i as Integer, j as Integer
 190  DBRs.Close
 200  Exit Sub
     
-gotError:
+<b>gotError:
     MsgBox Err.Number & " " & Err.Description & vbNewLine & vbNewLine & "Error on line: " & Erl, Title:=" "
     Stop
-    Resume Next
+    Resume Next</b>
 End Sub

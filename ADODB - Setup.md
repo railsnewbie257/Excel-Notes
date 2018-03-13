@@ -44,5 +44,27 @@ Dim useQuery As String
                 
         DBRs.MoveNext
     Next j
+    
+gotError:
+    MsgBox Err.Number & " " & Err.Description & vbNewLine & vbNewLine & "Error on line: " & Erl, Title:="VKWH_Download"
+    Stop
+    Resume Next
 End Sub
 </pre>
+
+<h2>References
+
+- Microsoft Office 15.0 Object Library
+- Microsoft ActiveX Data Objects (Multi-dimensional)
+- Microsoft ActiveX Data Objects 2.7 Library
+- Microsoft  DOemq 1.o0 Object Library
+- Microsoft Windows Common Controls-2 6.0 (SP6)
+- RefEdit Control
+
+- Change MACROWORKBOOK to name of current workbook
+
+<h2>Other Modules</h2>
+
+- Globals
+- DatabaseAccess
+- Display (StatusbarDisplay)

@@ -1,3 +1,4 @@
+<pre>
 Sub RunMyQuery()
 
 Dim DBCn As ADODB.Connection
@@ -44,3 +45,4 @@ Dim useQuery As String
         DBRs.MoveNext
     Next j
 End Sub
+</pre>

@@ -52,7 +52,7 @@ gotError:
 End Sub
 </pre>
 
-<h2>References
+<h2>References</h2>
 
 - Microsoft Office 15.0 Object Library
 - Microsoft ActiveX Data Objects (Multi-dimensional)

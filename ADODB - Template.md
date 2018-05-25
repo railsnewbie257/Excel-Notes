@@ -1,8 +1,8 @@
 <pre>
 Sub ReadDatabase()
-Dim DBCn As ADODB.Connection
+<b>Dim DBCn As ADODB.Connection
 Dim DBRs As ADODB.Recordset
-Dim useQuery as String
+Dim useQuery as String</b>
 Dim i as Integer, j as Integer
 
 <b>On Error GoTo gotError</b>

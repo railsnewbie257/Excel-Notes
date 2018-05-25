@@ -39,4 +39,4 @@
     <b>MsgBox Err.Number & " " & Err.Description & vbNewLine & vbNewLine & "Error on line: " & Erl, Title:=" "</b>
     <b>Stop</b>
     <b>Resume Next</b>
-End Sub
+<em>End Sub</em>

@@ -3,6 +3,7 @@
 <b>Dim DBCn As ADODB.Connection</b>
 <b>Dim DBRs As ADODB.Recordset</b>
 <b>Dim useQuery as String</b>
+<b>Dim fieldCount as Integer</b>
 <b>Dim i as Integer, j as Integer</b>
 
 <b>On Error GoTo gotError</b>
@@ -26,7 +27,7 @@
         
 130      <b>fieldCount = DBRs.Fields.count</b>
 140      <b>For j = 0 To fieldCount - 1</b>     <em>' across the row</em>
-150          <b>Cells(row, j+1) = DBRs.Fields(j).Value</b>
+150          <em>Cells(row, j+1) = DBRs.Fields(j).Value</em>
 160      <b>Next j</b>
 170      <b>DBRs.MoveNext</b>                   <em>' next row of data</em>
         

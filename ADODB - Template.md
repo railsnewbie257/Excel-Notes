@@ -1,41 +1,41 @@
 <pre>
-Sub ReadDatabase()
-<b>Dim DBCn As ADODB.Connection
-Dim DBRs As ADODB.Recordset
-Dim useQuery as String</b>
-Dim i as Integer, j as Integer
+<em>Sub ReadDatabase()</em>
+<b>Dim DBCn As ADODB.Connection</b>
+<b>Dim DBRs As ADODB.Recordset</b>
+<b>Dim useQuery as String</b>
+<b>Dim i as Integer, j as Integer</b>
 
 <b>On Error GoTo gotError</b>
-10    useQuery = "SELECT TOP 1 * from " & tableName
+10    <em>useQuery = "SELECT TOP 1 * from " & tableName</em>
 
-20    Set DBCn = DBCheckConnection(DBCn)
-30    Set DBRs = DBCheckRecordset(DBRs)
+20    <b>Set DBCn = DBCheckConnection(DBCn)</b>
+30    <b>Set DBRs = DBCheckRecordset(DBRs)</b>
 
-40    With DBRs
-50        .CursorLocation = adUseClient ' adUseServer
-60        .CursorType = adOpenDynamic ' adUseClient ' adOpenStatic ' adOpenDynamic ' adOpenForwardOnly
-70        .LockType = adLockReadOnly ' adLockOptimistic
-80        Set .ActiveConnection = DBCn
-90    End With
+40    <b>With DBRs</b>
+50        <b>.CursorLocation = adUseClient ' adUseServer</b>
+60        <b>.CursorType = adOpenDynamic ' adUseClient ' adOpenStatic ' adOpenDynamic ' adOpenForwardOnly</b>
+70        <b>.LockType = adLockReadOnly ' adLockOptimistic</b>
+80        <b>Set .ActiveConnection = DBCn</b>
+90    <b>End With</b>
 
 100   <b>DBRs.Open useQuery, DBCn</b>
 
 '----------------------------------------------------------------------------------------
-110   <b>recordCount = DBRs.recordCount</b> ' see if something returned
-120   For row = 1 To recordCount         ' down the sheet
+110   <b>recordCount = DBRs.recordCount</b> <em>' see if something returned</em>
+120   <b>For row = 1 To recordCount</b>         <em>' down the sheet</em>
         
-130      fieldCount = DBRs.Fields.count
-140      For j = 0 To fieldCount - 1     ' across the row
-150          Cells(row, j+1) = DBRs.Fields(j).Value
-160      Next j
-170      <b>DBRs.MoveNext</b>                   ' next row of data
+130      <b>fieldCount = DBRs.Fields.count</b>
+140      <b>For j = 0 To fieldCount - 1</b>     <em>' across the row</em>
+150          <b>Cells(row, j+1) = DBRs.Fields(j).Value</b>
+160      <b>Next j</b>
+170      <b>DBRs.MoveNext</b>                   <em>' next row of data</em>
         
-180  Next i
+180  <b>Next i</b>
 190  <b>DBRs.Close</b>
-200  Exit Sub
+200  <b>Exit Sub</b>
     
-<b>gotError:
-    MsgBox Err.Number & " " & Err.Description & vbNewLine & vbNewLine & "Error on line: " & Erl, Title:=" "
-    Stop
-    Resume Next</b>
+<b>gotError:</b>
+    <b>MsgBox Err.Number & " " & Err.Description & vbNewLine & vbNewLine & "Error on line: " & Erl, Title:=" "</b>
+    <b>Stop</b>
+    <b>Resume Next</b>
 End Sub

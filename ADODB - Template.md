@@ -19,7 +19,7 @@
 80        <b>Set .ActiveConnection = DBCn</b>
 90    <b>End With</b>
 
-100   <b>DBRs.Open useQuery, DBCn</b>
+100   <b>DBRs.Open useQuery, DBCn</b>  <em>' run the query</em>
 
 '----------------------------------------------------------------------------------------
 110   <b>recordCount = DBRs.recordCount</b> <em>' see if something returned</em>

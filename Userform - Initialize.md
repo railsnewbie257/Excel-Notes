@@ -2,7 +2,7 @@
 
 Requires:
 
-https://github.com/ppihoge/Excel-Notes/blob/master/Userform%20-%20Global.md
+[Userform - Globals](https://github.com/ppihoge/Excel-Notes/blob/master/Userform%20-%20Global.md)
 
 <pre>
     formCancel = false
